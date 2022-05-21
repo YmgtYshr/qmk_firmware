@@ -22,8 +22,8 @@
 
 #define RAISE LT(_RAISE,KC_B)
 #define LOWER LT(_LOWER,KC_N)
-#define LOPT LT(KC_LOPT,KC_Z)
-#define RCMD LT(KC_RCMD,KC_SLSH)
+#define RAISE2 LT(_RAISE,KC_X)
+#define LOWER2 LT(_LOWER,KC_DOT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base (qwerty)
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_MINS,
         KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-        SFT_SPC, LOPT,    KC_X,    KC_C,    KC_V,    RAISE,              LOWER,   KC_M,    KC_COMM, KC_DOT,  RCMD,    SFT_ENT
+        SFT_SPC, LALT_T(KC_Z),    RAISE2,    KC_C,    KC_V,    RAISE,              LOWER,   KC_M,    KC_COMM, LOWER2,  LGUI_T(KC_SLSH), SFT_ENT
     ),
 
     /* LOWER
