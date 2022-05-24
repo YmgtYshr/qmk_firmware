@@ -6,6 +6,8 @@
 #    include "42.h"
 #elif defined(KEYBOARD_handwired_fossyl_36)
 #    include "36.h"
+#elif defined(KEYBOARD_handwired_fossyl_one-36)
+#    include "one-36.h"
 #endif
 
 #include "quantum.h"
